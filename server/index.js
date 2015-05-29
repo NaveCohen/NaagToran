@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var dirName = "NaagToran";
+var dirName = "..\\";
 app.get('/', function (req, res) {
   res.sendFile("na'agToran\\www\\index.html", {root: dirName });
 });
@@ -9,7 +9,7 @@ app.get('/ionicCss', function (req, res) {
   res.sendFile("na'agToran\\www\\lib\\ionic\\css\\ionic.css", {root: dirName });
 });
 app.get('/styleCss', function (req, res) {
-  res.sendFile("na'agToran\\www\\css\\style.css", {root: dirName });
+  res.sendFile("na'agToran\\www\pp\css\\style.css", {root: dirName });
 });
 app.get('/ionicBundleJs', function (req, res) {
   res.sendFile("na'agToran\\www\\lib\\ionic\\js\\ionic.bundle.js", {root: dirName });
